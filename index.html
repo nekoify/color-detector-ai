@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brain.js/2.0.0-beta.1/brain-browser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jimp/0.22.8/jimp.min.js" integrity="sha512-35IpHDqZJRT/3FJlRl03MG3FSyg9CdLKLNgbUR15MgxKF/8WcUxB7tQ5vROtr0ClQ5ij5MaQXd8UOU+8doXbwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Document</title>
+</head>
+<body>
+<label for="img">Select image:</label>
+<input type="file" id="imgUpload" name="img" accept="image/*">
+<br>
+<h2 id="color"></h2>
+<p id="info"></p>
+<br>
+<br>
+<p>If the image is not one solid color, it will return the most common color found in the image</p>
+</body>
+<script src="/index.js"></script>
+</html>
