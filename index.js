@@ -52,7 +52,7 @@ const trainingData = [
 
   function detectColor(obj) {
     const output = net.run(obj);
-    console.log(output)
+    
     return Object.keys(output).reduce((a, b) => output[a] > output[b] ? a : b);
   }
 
@@ -111,8 +111,8 @@ const trainingData = [
 
 var imgUpload = document.getElementById("imgUpload")
 imgUpload.addEventListener("change", () => {
-console.log("fileUploaded")
-console.log(imgUpload.files[0])
+
+
 var reader = new FileReader();
 
 reader.onload = async function (event) {
