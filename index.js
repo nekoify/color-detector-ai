@@ -48,14 +48,6 @@ const trainingData = [
   ];
 
   net.train(trainingData);
-
-
-  function detectColor(obj) {
-    const output = net.run(obj);
-    
-    return Object.keys(output).reduce((a, b) => output[a] > output[b] ? a : b);
-  }
-
   async function detectImageColor(imagePath) {
     const pixels = await getImagePixels(imagePath);
     const detectedColors = [];
