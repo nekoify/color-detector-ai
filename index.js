@@ -109,11 +109,11 @@ const trainingData = [
   }
 
 
-var imgUpload = document.getElementById("imgUpload")
+const imgUpload = document.getElementById("imgUpload")
 imgUpload.addEventListener("change", () => {
 
 
-var reader = new FileReader();
+const reader = new FileReader();
 
 reader.onload = async function (event) {
     document.getElementById("color").textContent = "Processing..."
